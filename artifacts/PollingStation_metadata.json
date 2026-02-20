@@ -100,10 +100,11 @@
 	},
 	"sources": {
 		"lab3/PollingStation.sol": {
-			"keccak256": "0x7002735fce8f5e279e40370c15f67049cc05774d58fa5764d00ba8c8c34daabb",
+			"keccak256": "0x0a1e147398321fe87e897c951d59a911af990713cacfd784d0a5c81c11403cf0",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c46bf1e8a5126e057559a85fdcb9a8e8e1bd87e15acd2fe739a46d9a524b280a",
-				"dweb:/ipfs/QmeDqiSXty74oFadpTp5bYrqyuxyB8FBE8qR4LWddmk5sQ"
+				"bzz-raw://67fda807aefcc70be3dc855ca8eb97f3870ca4008bee5a5a86b818662c572bd8",
+				"dweb:/ipfs/QmbxLxUstLnVGw3bN6LrVsVycRzi3eUp8DwkTpJbQBsX1Z"
 			]
 		}
 	},

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.5;
+
 abstract contract PollingStation {
     address public president; 
     bool public votingFinished = false; 

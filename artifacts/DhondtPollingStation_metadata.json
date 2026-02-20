@@ -129,17 +129,18 @@
 			]
 		},
 		"lab3/DhondtPollingStation.sol": {
-			"keccak256": "0x3e333bcc2123aff012dcdf49055ed5cd82c73f07f1f9a1978917b4f8e921e12c",
+			"keccak256": "0x0b44319df08973bf06c473ad5ae017a1a8c93146126c085b41835126fad7d4c8",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d8691ec6bc541f7e03d0e7bcb13b77aac81caf697c31ea693929810cfdfaf141",
-				"dweb:/ipfs/QmSYLLMTwcZTRtSE9bPoxxeUHhez99JsrnrWcEyQsHNAb5"
+				"bzz-raw://cc617e70400c584c5ff758152c8c994830c8f7376329f2305a8389d86ce339a8",
+				"dweb:/ipfs/QmWABA21oPkupkpi86Bkwuff4hNWyqbVcCiszPH5GxJFuj"
 			]
 		},
 		"lab3/PollingStation.sol": {
-			"keccak256": "0x6f288b8b8eabed4f26a246f476018e923961a89b644dd5757dfa60281583e087",
+			"keccak256": "0x7002735fce8f5e279e40370c15f67049cc05774d58fa5764d00ba8c8c34daabb",
 			"urls": [
-				"bzz-raw://6e258d830b98cd6cdaf8cac1a54727168e58217195fa90bd735bf0a74901cf68",
-				"dweb:/ipfs/QmNvyZLRqPV2x4qCDinPzmzFqm8y2ffWuiAbPjXSX2E8Ay"
+				"bzz-raw://c46bf1e8a5126e057559a85fdcb9a8e8e1bd87e15acd2fe739a46d9a524b280a",
+				"dweb:/ipfs/QmeDqiSXty74oFadpTp5bYrqyuxyB8FBE8qR4LWddmk5sQ"
 			]
 		}
 	},
