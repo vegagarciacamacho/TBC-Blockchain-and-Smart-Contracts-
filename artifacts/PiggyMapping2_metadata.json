@@ -121,7 +121,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practica1/piggyMapping2.sol": "PiggyMapping2"
+			"lab2/piggyMapping2.sol": "PiggyMapping2"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -135,7 +135,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"practica1/piggyMapping2.sol": {
+		"lab2/piggyMapping2.sol": {
 			"keccak256": "0x45367a454fd67a9685080830698241276af37877ba5338a532cc344422348039",
 			"license": "GPL-3.0",
 			"urls": [

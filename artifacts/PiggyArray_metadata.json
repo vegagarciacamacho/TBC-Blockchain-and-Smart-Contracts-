@@ -94,7 +94,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practica1/piggyArray.sol": "PiggyArray"
+			"lab2/piggyArray.sol": "PiggyArray"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -108,7 +108,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"practica1/piggyArray.sol": {
+		"lab2/piggyArray.sol": {
 			"keccak256": "0x537c7df48455730158bba5d62cb16cf51b6cbc29e46355396e0e5cbdce5c9598",
 			"license": "GPL-3.0",
 			"urls": [

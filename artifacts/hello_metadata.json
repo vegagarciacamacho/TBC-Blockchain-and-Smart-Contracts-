@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practica1/hello.sol": "hello"
+			"lab2/hello.sol": "hello"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -72,7 +72,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"practica1/hello.sol": {
+		"lab2/hello.sol": {
 			"keccak256": "0x81094729e900dac1b9fb84c2190a8775606ad4fffa82b9290b1cd9cab6384a61",
 			"license": "GPL-3.0",
 			"urls": [
