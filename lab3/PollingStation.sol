@@ -1,33 +1,33 @@
 abstract contract PollingStation {
-    address public president; // [cite: 51]
-    bool public votingFinished = false; // [cite: 46]
-    bool private votingOpen = false; // [cite: 47]
+    address public president; 
+    bool public votingFinished = false; 
+    bool private votingOpen = false; 
 
     modifier onlyPresident() {
-        require(msg.sender == president, "Solo el presidente puede hacer esto"); // [cite: 62]
+        require(msg.sender == president, "Solo el presidente puede hacer esto"); 
         _;
     }
 
     modifier onlyIfOpen() {
-        require(votingOpen && !votingFinished, "La votacion no esta abierta"); // [cite: 55, 60]
+        require(votingOpen && !votingFinished, "La votacion no esta abierta"); 
         _;
     }
 
     constructor(address _president) {
-        president = _president; // [cite: 53]
+        president = _president; 
     }
 
     function openVoting() external onlyPresident {
         require(!votingFinished, "La votacion ya finalizo");
-        votingOpen = true; // [cite: 54]
+        votingOpen = true; 
     }
 
     function closeVoting() external onlyPresident {
         votingOpen = false;
-        votingFinished = true; // [cite: 56, 57]
+        votingFinished = true; 
     }
 
-    // Funciones que implementara el hijo [cite: 58]
+    // Funciones que implementara el hijo 
     function castVote(uint _partyId) external virtual;
     function getResults() external virtual returns (uint[] memory);
 }

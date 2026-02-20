@@ -121,11 +121,11 @@
 	},
 	"sources": {
 		"lab3/DhondtElectionRegion.sol": {
-			"keccak256": "0x48f17030c96ff4d97a7919edcbc36f73eeebdf9f00e82d091473d09206eaa02c",
+			"keccak256": "0xbcd85bc248ad28f737a0bcbb124fbdaa07477bf7531105247a77cd5d56ccc0df",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ec9637c045a5a7b8e83cdb291b6836ccd5385f7a06f413c8eea1ecfa19d4355c",
-				"dweb:/ipfs/QmZnrAXSJBMccTj18ennAjtSrDBKhxweE4rwYaXHeYEZF7"
+				"bzz-raw://7f90d21b934b54b01ed20f45dcd1343dc1b2481689a1d9749a988afd0c2d42be",
+				"dweb:/ipfs/QmdX5QfJTjJYfyZWymFN8GTwXTom24e3MECLL4AkVeCAis"
 			]
 		},
 		"lab3/DhondtPollingStation.sol": {

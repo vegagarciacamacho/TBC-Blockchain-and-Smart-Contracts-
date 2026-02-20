@@ -1,0 +1,62 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numParties",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_regionId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab3/DhondtElectionRegion.sol": "DhondtElectionRegion"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab3/DhondtElectionRegion.sol": {
+			"keccak256": "0xbcd85bc248ad28f737a0bcbb124fbdaa07477bf7531105247a77cd5d56ccc0df",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7f90d21b934b54b01ed20f45dcd1343dc1b2481689a1d9749a988afd0c2d42be",
+				"dweb:/ipfs/QmdX5QfJTjJYfyZWymFN8GTwXTom24e3MECLL4AkVeCAis"
+			]
+		}
+	},
+	"version": 1
+}

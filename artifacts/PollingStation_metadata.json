@@ -85,7 +85,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lab3/pollingStation.sol": "PollingStation"
+			"lab3/PollingStation.sol": "PollingStation"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -99,11 +99,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"lab3/pollingStation.sol": {
-			"keccak256": "0x6f288b8b8eabed4f26a246f476018e923961a89b644dd5757dfa60281583e087",
+		"lab3/PollingStation.sol": {
+			"keccak256": "0x7002735fce8f5e279e40370c15f67049cc05774d58fa5764d00ba8c8c34daabb",
 			"urls": [
-				"bzz-raw://6e258d830b98cd6cdaf8cac1a54727168e58217195fa90bd735bf0a74901cf68",
-				"dweb:/ipfs/QmNvyZLRqPV2x4qCDinPzmzFqm8y2ffWuiAbPjXSX2E8Ay"
+				"bzz-raw://c46bf1e8a5126e057559a85fdcb9a8e8e1bd87e15acd2fe739a46d9a524b280a",
+				"dweb:/ipfs/QmeDqiSXty74oFadpTp5bYrqyuxyB8FBE8qR4LWddmk5sQ"
 			]
 		}
 	},
