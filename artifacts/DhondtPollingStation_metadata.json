@@ -129,10 +129,10 @@
 			]
 		},
 		"lab3/DhondtPollingStation.sol": {
-			"keccak256": "0x8bfc8acf343069a7932a7f77989bb5b1700e658ae47b7880572e2aefa669e497",
+			"keccak256": "0x3e333bcc2123aff012dcdf49055ed5cd82c73f07f1f9a1978917b4f8e921e12c",
 			"urls": [
-				"bzz-raw://658d9a33db8b5424a499de769f291be2aaf1d3dc80edf6face6a73ecf4a00f1e",
-				"dweb:/ipfs/QmPBjq8agDhD9jqzD8S5RdHXazhhFxy7hZHy32EGwA7HQL"
+				"bzz-raw://d8691ec6bc541f7e03d0e7bcb13b77aac81caf697c31ea693929810cfdfaf141",
+				"dweb:/ipfs/QmSYLLMTwcZTRtSE9bPoxxeUHhez99JsrnrWcEyQsHNAb5"
 			]
 		},
 		"lab3/PollingStation.sol": {
