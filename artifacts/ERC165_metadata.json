@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceID",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab4/ERC721simplified.sol": "ERC165"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab4/ERC721simplified.sol": {
+			"keccak256": "0x0cc290967a8f9dc269ee3e187634dc3a79234578298b140ac276ed9c9692976e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://005b25321bbb06224c52cb410881900bb1d0aa505fc58780792d507987fca764",
+				"dweb:/ipfs/QmV9GmqkMRxkGLmrHCEC4CE5Q84euudzRiAG4TAHpoWoAS"
+			]
+		}
+	},
+	"version": 1
+}
