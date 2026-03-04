@@ -184,24 +184,6 @@
 						"internalType": "uint256",
 						"name": "_tokenId",
 						"type": "uint256"
-					},
-					{
-						"internalType": "uint8",
-						"name": "_percentage",
-						"type": "uint8"
-					}
-				],
-				"name": "incrementFirePower",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_tokenId",
-						"type": "uint256"
 					}
 				],
 				"name": "ownerOf",
@@ -213,19 +195,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_tokenId",
-						"type": "uint256"
-					}
-				],
-				"name": "removeMonsterToken",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -351,11 +320,11 @@
 			]
 		},
 		"lab4/MonsterTokens.sol": {
-			"keccak256": "0x77e09f3c66babd56980e2de32a9ec743e75328f626877b64cb445a9975cfc91d",
+			"keccak256": "0x60f4dd0aaf8ad851d8e4df9c9a5b8bed743e78c6fe54e41d3bcb0443532b1c1a",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c5a60ba20724cc98b643d493012e8b77590da19df87281d4ba05e453d2f20cde",
-				"dweb:/ipfs/QmdTYRUBsyYokbjg6fgCwyfvKGMw1xPDgsQ77Loiz6Q3ma"
+				"bzz-raw://ad165115863807a427c451adc2a1c42eb1596bb013cbd641a69837c1b4e32e61",
+				"dweb:/ipfs/QmQUm2ukkyfwAv9f4vNdAW6AFcyDxnzWENnuAvf83mA4XR"
 			]
 		}
 	},

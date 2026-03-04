@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab4/MonsterTokens.sol": "ERC721TokenReceiver"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab4/ArrayUtils.sol": {
+			"keccak256": "0x56d5beb26943403eb7e5e13282531e661aa5f62f88b7a9ceea7b7d174f3837fe",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6fd6fe02b758ed72bab32a6180916e141a1832c0b0f4402b41060cfd342bdd2b",
+				"dweb:/ipfs/QmciepcCyGcxspjCMEWCRcu6LKeK2sk27kZ6nuRyfbVJU6"
+			]
+		},
+		"lab4/ERC721simplified.sol": {
+			"keccak256": "0x0cc290967a8f9dc269ee3e187634dc3a79234578298b140ac276ed9c9692976e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://005b25321bbb06224c52cb410881900bb1d0aa505fc58780792d507987fca764",
+				"dweb:/ipfs/QmV9GmqkMRxkGLmrHCEC4CE5Q84euudzRiAG4TAHpoWoAS"
+			]
+		},
+		"lab4/MonsterTokens.sol": {
+			"keccak256": "0x60f4dd0aaf8ad851d8e4df9c9a5b8bed743e78c6fe54e41d3bcb0443532b1c1a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ad165115863807a427c451adc2a1c42eb1596bb013cbd641a69837c1b4e32e61",
+				"dweb:/ipfs/QmQUm2ukkyfwAv9f4vNdAW6AFcyDxnzWENnuAvf83mA4XR"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab4/TestReceiver.sol": "TestReceiver"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab4/TestReceiver.sol": {
+			"keccak256": "0xc4a8a9f260f248bce4f0170de43a3222c725291bfcde23075c21392e106c0a53",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://246e7e8a472469a8a871ae2c8ee4e900e0e97f51fcd179137c94f4341e116003",
+				"dweb:/ipfs/QmSHFZ6yL5pFqsnYBccrWC5zWsnijoHe6nBE7fpuEQjwk3"
+			]
+		}
+	},
+	"version": 1
+}

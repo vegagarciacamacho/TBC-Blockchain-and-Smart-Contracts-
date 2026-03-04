@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getERC165Id",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getERC721Id",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab4/SelectorHelper.sol": "SelectorHelper"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab4/ERC721simplified.sol": {
+			"keccak256": "0x0cc290967a8f9dc269ee3e187634dc3a79234578298b140ac276ed9c9692976e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://005b25321bbb06224c52cb410881900bb1d0aa505fc58780792d507987fca764",
+				"dweb:/ipfs/QmV9GmqkMRxkGLmrHCEC4CE5Q84euudzRiAG4TAHpoWoAS"
+			]
+		},
+		"lab4/SelectorHelper.sol": {
+			"keccak256": "0x018a44e2f037b35c8eba3b583ea747a6389fed14d9444cb001462df1724b536c",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f365b07190dab4a8b9f7654aef76eb9fe5dc1e1a29b707e900f6f649c9ae3d4b",
+				"dweb:/ipfs/QmP2PuJpzWGtfjHtZSKzUkrGAMuFMmQdB2k2EZbVHrcLb4"
+			]
+		}
+	},
+	"version": 1
+}
