@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "computeSum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "generate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab5/lab5.sol": "lab6"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": [],
+		"viaIR": true
+	},
+	"sources": {
+		"lab5/lab5.sol": {
+			"keccak256": "0xb3c9e88f1ccb28d21b8b1bfd25985ceb8342e8a49e1f8261955f965553f82d0f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://54ce62bce69b73a4a92d8c7eef9dab596ed91bc0a3e5306c53283b6a4ad9b9b1",
+				"dweb:/ipfs/QmfKcF1vnfSiMzZ1QuAEBFRQSFE7YezQQPJP2Hu2xK7yZa"
+			]
+		}
+	},
+	"version": 1
+}

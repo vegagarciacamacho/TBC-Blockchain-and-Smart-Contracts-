@@ -1,0 +1,104 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "generate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxMinSolidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "maxmin",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxMinYul",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "maxmin",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab6/lab6_ex3.sol": "ComparativaGas"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab6/lab6_ex3.sol": {
+			"keccak256": "0x4225e38dead30bd3af0915c6803e9621504fdbf08cf42d84faa214700e6848e7",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4bb6a8cd452005896d48dc4fa6a6761aca13446b4c36d77d77b1c35938f7fc0e",
+				"dweb:/ipfs/QmWRdSv8xetyQJnQi4WpSrK18QznqWjwDPDCryGEZ88Eih"
+			]
+		}
+	},
+	"version": 1
+}

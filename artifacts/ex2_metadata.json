@@ -1,0 +1,92 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "generate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxMinStorage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "maxmin",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab6/lab6_ex2.sol": "ex2"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": [],
+		"viaIR": true
+	},
+	"sources": {
+		"lab6/lab6_ex2.sol": {
+			"keccak256": "0x464997a77cc9aa600e2e680aa0929687ed0d254788ed51f5fe31d18e4eb3b3e5",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9ccd8f0e5466f13fb027d7dfa4a37581c8447bddd8575259e808182e5056c021",
+				"dweb:/ipfs/QmejdXf5wtadz2PKrpEJSTKaRc1ycETWncuy7u2FF9kcH2"
+			]
+		}
+	},
+	"version": 1
+}
