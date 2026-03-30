@@ -128,11 +128,11 @@
 	},
 	"sources": {
 		"lab7/FixedToken.sol": {
-			"keccak256": "0xa33e5cbe6bbf98b1f287a931bd6465a8d42cdb16fb70384bd91083cf944e98e0",
+			"keccak256": "0x84d23695c6e1c098db9384f9eaebad1ebdb0c7f4c09298c25c439e1646022168",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b335f6f3a8e090a41c6353bd0c8c5d6bc82abc5b83be39585dc761e8a1893028",
-				"dweb:/ipfs/QmZXjLbhNuGX6GP55whhTbLAEuAvajpPLDy9cVKPhHAywv"
+				"bzz-raw://9b2e7fff8e6dc3aa4f666b47fbf3fe66cc2d12cd65513a4f4ab8a0064588b51a",
+				"dweb:/ipfs/QmTxXz5pzT8yzvDUCjMqJMNaCshY7XS7Xrx2zzVoLaUNUK"
 			]
 		}
 	},
