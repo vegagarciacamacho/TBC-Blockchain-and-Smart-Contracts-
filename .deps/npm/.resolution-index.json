@@ -1,0 +1,34 @@
+{
+  "lab7/faultyToken.sol": {
+    "__sources__": {
+      "lab7/faultyToken.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.26;\n \ncontract FaultyToken {\n \n    uint256 public constant MAX_SUPPLY = 1000000;\n \n    address public owner;\n    mapping(address => uint256) public balances;\n    uint256 public totalSupply;\n \n    constructor() { owner = msg.sender; }\n \n    function mint(address to, uint256 amount) external {\n        require(msg.sender == owner, \"Not owner\");\n        require(amount > 0, \"Zero amount\");\n        uint256 remaining = MAX_SUPPLY - totalSupply;\n        uint256 minted    = amount < remaining ? amount : remaining;\n\n        // Update the global information\n        balances[to]  += minted;\n        totalSupply   += amount;\n\n        // The current #tokens does not reach MAX_SUPPLY\n        assert(totalSupply <= MAX_SUPPLY);\n    }\n \n    function burn(uint256 amount) external {\n        require(balances[msg.sender] >= amount, \"Insufficient balance\");\n        balances[msg.sender] -= amount;\n        totalSupply -= amount;\n        \n        // The current #tokens does not reach MAX_SUPPLY\n        assert(totalSupply <= MAX_SUPPLY);\n    }\n}",
+        "file": "lab7/faultyToken.sol"
+      }
+    }
+  },
+  "lab7/shop.sol": {
+    "__sources__": {
+      "lab7/shop.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.26;\n\ncontract ShopRegistry {\n\n    struct Item {\n        uint128 price;       // 16 bytes\n        address seller;      // 20 bytes\n        uint256 itemId;      // 32 bytes\n        uint64  stock;       //  8 bytes\n        bool    available;   //  1 byte\n    }\n\n    uint64  public  totalSold;     //  8 bytes\n    bool    public  paused;        //  1 byte\n    uint256 public  totalRevenue;  // 32 bytes\n    uint128 public  feeRate;       // 16 bytes\n    address public  owner;         // 20 bytes\n\n\n    mapping(uint256 => Item) public items; // 32 bytes\n\n    constructor() {\n        owner  = msg.sender;\n        paused = false;\n    }\n\n    function addItem(\n        uint256 id,\n        uint128 price,\n        uint64  stock\n    ) external {\n        require(!paused, \"Contract is paused\");\n        require(msg.sender == owner, \"Not owner\");\n        items[id] = Item(price, msg.sender, id, stock, true);\n    }\n\n    function recordSale(uint256 id, uint128 amount) external {\n        require(!paused, \"Contract is paused\");\n        require(items[id].available, \"Item not available\");\n        require(items[id].stock > 0, \"Out of stock\");\n        items[id].stock -= 1;\n        totalSold += 1;\n        totalRevenue += amount;\n    }\n}",
+        "file": "lab7/shop.sol"
+      }
+    }
+  },
+  "lab7/ShopRegistryOpt.sol": {
+    "__sources__": {
+      "lab7/ShopRegistryOpt.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.26;\r\n\r\ncontract ShopRegistryOpt {\r\n\r\n    struct Item {\r\n        // Slot 0: 32 bytes\r\n        uint256 itemId;\r\n        // Slot 1: 20 + 8 + 1 = 29 bytes (Empaquetados)\r\n        address seller;    // 20 bytes \r\n        uint64  stock;     // 8 bytes \r\n        bool    available; // 1 byte \r\n        // Slot 2: 16 bytes\r\n        uint128 price;     // 16 bytes \r\n    }\r\n\r\n    // --- Variables de Estado Optimizadas ---\r\n    \r\n    // Slot 0: 32 bytes\r\n    uint256 public totalRevenue; \r\n    \r\n    // Slot 1: 32 bytes\r\n    mapping(uint256 => Item) public items; \r\n\r\n    // Slot 2: 20 + 8 + 1 = 29 bytes (Empaquetados)\r\n    address public owner;       // 20 bytes \r\n    uint64  public totalSold;   // 8 bytes \r\n    bool    public paused;      // 1 byte \r\n    \r\n    // Slot 3: 16 bytes\r\n    uint128 public feeRate;     // 16 bytes \r\n\r\n    constructor() {\r\n        owner  = msg.sender; \r\n        paused = false;     \r\n    }\r\n\r\n    // Las funciones permanecen con la misma lógica que el original \r\n    \r\n    function addItem(\r\n        uint256 id,\r\n        uint128 price,\r\n        uint64  stock\r\n    ) external {\r\n        require(!paused, \"Contract is paused\"); \r\n        require(msg.sender == owner, \"Not owner\"); \r\n        \r\n        // El orden de los argumentos en el constructor del struct debe coincidir\r\n        // con la declaración original o usarse de forma nominal\r\n        items[id] = Item({\r\n            price: price,\r\n            seller: msg.sender,\r\n            itemId: id,\r\n            stock: stock,\r\n            available: true\r\n        });\r\n    }\r\n\r\n    function recordSale(uint256 id, uint128 amount) external {\r\n        require(!paused, \"Contract is paused\"); \r\n        require(items[id].available, \"Item not available\"); \r\n        require(items[id].stock > 0, \"Out of stock\"); \r\n        \r\n        items[id].stock -= 1; \r\n        totalSold += 1; \r\n        totalRevenue += amount; \r\n    }\r\n}",
+        "file": "lab7/ShopRegistryOpt.sol"
+      }
+    }
+  },
+  "lab7/FixedToken.sol": {
+    "__sources__": {
+      "lab7/FixedToken.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.26;\r\n\r\ncontract FixedToken {\r\n    uint256 public constant MAX_SUPPLY = 1000000; // [cite: 620]\r\n    address public owner; // [cite: 621]\r\n    mapping (address => uint256) public balances; // [cite: 622]\r\n    uint256 public totalSupply; // [cite: 624]\r\n\r\n    constructor() { \r\n        owner = msg.sender; // [cite: 625-626]\r\n    }\r\n\r\n    function mint(address to, uint256 amount) external {\r\n        require(msg.sender == owner, \"Not owner\"); // [cite: 629]\r\n        require(amount > 0, \"Zero amount\"); // \r\n\r\n        uint256 remaining = MAX_SUPPLY - totalSupply; // \r\n        uint256 minted = amount < remaining ? amount : remaining; // \r\n\r\n        balances[to] += minted; // [cite: 634]\r\n        \r\n        // CORRECCIÓN: Se debe sumar 'minted' (cantidad real), no 'amount' (solicitada)\r\n        totalSupply += minted; \r\n\r\n        // El SMTChecker ahora valida que esta aserción nunca falla\r\n        assert(totalSupply <= MAX_SUPPLY); // \r\n    }\r\n\r\n    function burn(uint256 amount) external {\r\n        require(balances[msg.sender] >= amount, \"Insufficient balance\"); // [cite: 641]\r\n        balances[msg.sender] -= amount; // [cite: 642]\r\n        totalSupply -= amount; // [cite: 643]\r\n        \r\n        assert(totalSupply <= MAX_SUPPLY); // [cite: 645]\r\n    }\r\n}",
+        "file": "lab7/FixedToken.sol"
+      }
+    }
+  }
+}

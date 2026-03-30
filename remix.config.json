@@ -1,4 +1,19 @@
 {
+  "language": "Solidity",
+  "settings": {
+    "modelCheckerSettings": {
+      "engine": "all",
+      "targets": [
+        "assert",
+        "underflow",
+        "overflow"
+      ]
+    },
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    }
+  },
   "solidity-compiler": {
     "language": "Solidity",
     "settings": {
