@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.31+commit.fd3a2265"
 	},
 	"language": "Solidity",
 	"output": {
@@ -48,7 +48,7 @@
 				"name": "victim",
 				"outputs": [
 					{
-						"internalType": "contract ICryptoVault",
+						"internalType": "address payable",
 						"name": "",
 						"type": "address"
 					}
@@ -74,9 +74,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lab8/Attacker.sol": "Attacker"
+			"lab8/AttackerCallsBajoNivel.sol": "Attacker"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -96,12 +96,12 @@
 				"dweb:/ipfs/QmSwJ6C5QLz6xKeQZS8wbwjU1KxRFTYfwbGmtzisd5sRW4"
 			]
 		},
-		"lab8/Attacker.sol": {
-			"keccak256": "0x1e2ac2c7001a7419ed40cd3fe702171c178ae51a627f19cc80c28b5f8423e6f9",
+		"lab8/AttackerCallsBajoNivel.sol": {
+			"keccak256": "0x5048e2a51bd4ecf18626239a7db9958d796fc916e3115e51f842ba72badfead4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e9f9a0c7d80d77621eea242ae14b2a3c7206401265864c6c252ac1eb837d7f04",
-				"dweb:/ipfs/QmTqGUcMABompeAqLawDemobayQHrWJqGQruK27XXnvCtb"
+				"bzz-raw://01f7a576b362ddf8e5304211b34814bdf81a7cd26772b85089bb5ad5ebec0506",
+				"dweb:/ipfs/QmdLdXbWmwGA3cu7SHyN5t7EzzrAFBiJeMTwjVatQm9c9R"
 			]
 		}
 	},
