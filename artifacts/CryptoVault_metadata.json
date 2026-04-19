@@ -111,7 +111,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lab9/CryptoVault2Fixed.sol": "CryptoVaultFixed"
+			"lab9/CryptoVault2.sol": "CryptoVault"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -125,11 +125,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"lab9/CryptoVault2Fixed.sol": {
-			"keccak256": "0x37c5643d0e44d7fe05dc6cddc0a738e9155c3b18d4007b1443b78e9656b1b6bb",
+		"lab9/CryptoVault2.sol": {
+			"keccak256": "0x2b587141a5a33782ad7f09f066284c6e7362d494a89f66dc6f47c37341bd7d90",
 			"urls": [
-				"bzz-raw://0e0abcaaaed58bca5d4424a7d22e35dda9800a9f67e45c7d07a4abd76f9e727e",
-				"dweb:/ipfs/QmUJNNDrS8ZeMvhkKG43dtekMe6mdHWrfpZNMq7BapnXXK"
+				"bzz-raw://786f80c54c5bdf546c692a5c17d3c6bf0f63f5f46f22f7bd267446a5674b5904",
+				"dweb:/ipfs/QmRXjXyeyogp6kdSj83wGjCJKM4bLH96hsyQgM3QCEN8Uj"
 			]
 		}
 	},

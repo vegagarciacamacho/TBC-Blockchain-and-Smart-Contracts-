@@ -1,0 +1,76 @@
+{
+	"compiler": {
+		"version": "0.6.2+commit.bacdbe57"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_victim",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "victim",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab9/AttackOwnership.sol": "AttackOwnership"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab9/AttackOwnership.sol": {
+			"keccak256": "0x524d47a1d61fbff307761c0bf8f8d405b14317d62d91334ec7a51f46fb9b546d",
+			"urls": [
+				"bzz-raw://76a593ec0451df9d366500d49aed058ae615666ac78917a328804cb0e6801354",
+				"dweb:/ipfs/QmbJsrBZ3JBTsFFpAy8n4pAC4c5DqySH8B3vrmp7VAKW64"
+			]
+		}
+	},
+	"version": 1
+}
