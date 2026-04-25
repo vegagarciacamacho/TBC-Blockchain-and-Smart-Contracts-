@@ -130,5 +130,18 @@
         "file": "lab9/CryptoVault2Fixed.sol"
       }
     }
+  },
+  "lab10/DVault.sol": {
+    "./IDvault.sol": "lab10/IDvault.sol",
+    "__sources__": {
+      "lab10/DVault.sol": {
+        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity ^0.8.0;\r\n\r\nimport \"./IDvault.sol\";\r\n\r\ncontract DVault is IDVault {\r\n    mapping(address => uint) private accounts;\r\n\r\n    function deposit() external payable override {\r\n        accounts[msg.sender] += msg.value;\r\n    }\r\n\r\n    function withdraw(uint _amount) external override {\r\n        require(accounts[msg.sender] >= _amount, \"Saldo insuficiente\");\r\n        // Patron Checks-Effects-Interactions para evitar reentrada\r\n        accounts[msg.sender] -= _amount;\r\n        (bool sent, ) = msg.sender.call{value: _amount}(\"\");\r\n        require(sent, \"Error al enviar Ether\");\r\n    }\r\n\r\n    function balanceOf(address _owner) external view override returns (uint) {\r\n        return accounts[_owner];\r\n    }\r\n\r\n    function transfer(address _to, uint _amount) external override {\r\n        require(accounts[msg.sender] >= _amount, \"Saldo insuficiente\");\r\n        accounts[msg.sender] -= _amount;\r\n        accounts[_to] += _amount;\r\n    }\r\n\r\n    function externalTransfer(IDVault _dvault, uint _amount) external override {\r\n        require(accounts[msg.sender] >= _amount, \"Saldo insuficiente\");\r\n        accounts[msg.sender] -= _amount;\r\n        // Se envia el Ether a la otra hucha\r\n        _dvault.deposit{value: _amount}();\r\n    }\r\n}",
+        "file": "lab10/DVault.sol"
+      },
+      "lab10/IDvault.sol": {
+        "content": "// SPDX-License-Identifier: GPL-3.0\npragma solidity ^0.8.0;\n\ninterface IDVault {\n  // Deposits some Ether owned by the sender.\n  function deposit() external payable;\n\n  // Withdraws some _amount owned by the sender.\n  function withdraw(uint _amount) external;\n\n  // Returns the balance deposited for an address.\n  function balanceOf(address _owner) external view returns (uint);\n\n  // Transfers the ownership of an amount from the sender to another\n  // user _to.\n  function transfer(address _to, uint _amount) external;\n  \n  // Transfers some _amount between two different DVault contracts:\n  // transfers _amount from this DVault to another DVault deployed at\n  // address _dvault.\n  //\n  // IMPORTANT: note that the owner of the amount transferred should\n  // be the same address in both DVaults.\n  function externalTransfer(IDVault _dvault, uint _amount) external;\n}\n\n",
+        "file": "lab10/IDvault.sol"
+      }
+    }
   }
 }

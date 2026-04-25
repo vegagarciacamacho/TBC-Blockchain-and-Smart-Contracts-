@@ -1,0 +1,129 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IDVault",
+						"name": "_dvault",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "externalTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab10/DVault.sol": "DVault"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab10/DVault.sol": {
+			"keccak256": "0x5869a11429a8f472c51ba90ea43088efe130e8d5cfc3eda427683197e85b5e93",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4c583b3a51708367a9383eec8b22534872e196c1d0918bedaf5f94f3888129d6",
+				"dweb:/ipfs/QmSvJtJGG3yNEwmzb2LVtViBGDW5xyt1fGfFdziCuxmv1m"
+			]
+		},
+		"lab10/IDvault.sol": {
+			"keccak256": "0x3f9d14767fc8fef5ee14b5a66ae7a79fe0261f97016e286e94514350eb51d48d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6d6db5957161ed5dd1aec91b6b9419631773d70d9a77597a192dde3f80a07bb2",
+				"dweb:/ipfs/QmWW8dS6akzYyjnBPprihpmfytyvqDiYVrRuJMqxixpaC4"
+			]
+		}
+	},
+	"version": 1
+}
